@@ -1,0 +1,18 @@
+def AdditivePersistence(num)
+	str = num.to_s
+    total = 0
+    cnt = 0
+  while str.length > 1 do
+    str.each_char do |x|
+      x = x.to_i 
+      total += x
+    end
+    
+    str = total.to_s
+    total = 0
+    cnt += 1
+  end
+  # code goes here
+  return cnt
+         
+end
